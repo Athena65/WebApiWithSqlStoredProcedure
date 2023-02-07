@@ -1,0 +1,13 @@
+USE [CrudWithStoredProcedure]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE OR ALTER PROCEDURE [dbo].[DeleteCustomerById]
+@Id int
+AS
+BEGIN
+	DELETE FROM dbo.Customers where Id=@Id
+END
+GO
